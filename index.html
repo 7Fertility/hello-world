@@ -1,28 +1,47 @@
  <!DOCTYPE html>
 <html>
 <head>
-    <link href=link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">" crossorigin="anonymous">
-        <title>My Blog </title>
+    <link href=link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+     <!---Animate CSS-->
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax">
+     <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline" rel="stylesheet">
+     <!---Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>     
+    <body>
+         <title>My Blog </title>
         <h1>About Me</h1>
         <h6></h6>
-    </head>
-    <body>
-        <h2><strong> Cats are adorable</strong> </h2>
-        <strong> They're so FURRRRYYYY</strong>
-        <em>Piercing stares</em>
-        <p>I could be a cat lady</p>
-        <ol type= "square">
-            <li>No children wanted</li>
-            <li>I even have a cat wallet</li>
-         </ol>
-        <h2>Moving onto something else...</h2>
-        <img src="https://vignette.wikia.nocookie.net/tokyoghoul/images/c/c7/Kaneki%27s_Mask.png/revision/latest?cb=20160519211510"></img>
-    
+        <h2><strong> Anime Lover</strong> </h2>
+        <strong>Beautiful art </strong>
+        <em>Good stories!</em>
+        <p></p>
+        <li>Interesting and dark themes</li>
+        <li>Spirits, ghosts, nature</li>
+        <li>Dystopian societies, mental illnesses, loss</li>
+        <p></p>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://s-media-cache-ak0.pinimg.com/736x/58/ab/df/58abdfa263ae51063674fefe37d0f236.jpg">
+    </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+   
         <p>Do you think this quote defines Kaneki? </p>
-        <p>"If you were to write a story with me in the lead role, it would certainly be... a
-        tragedy."</p>
+        <p>"If you were to write a story with me in the lead role, it would certainly be...a tragedy."</p>
         <form>
-            <label for="male">Yes </label>
+            <label>Yes</label>
             <input type="radio" name="gender" id="male" value="male"><br>
             <label for="female">No</label>
             <input type="radio" name="gender" id="female" value="female"><br>
@@ -45,22 +64,24 @@
         </nav>
              <!--Header-->
               <div id="header" class="header">
-               <div class= "slideshow-container">
-               <div class= "my images">
-                <img src= "https://vignette.wikia.nocookie.net/tokyoghoul/images/0/0b/Goat_members_arriving_to_CCG.png/revision/latest?cb=20171206182652">
+               <div class="slideshow-container">
+               <div class="my images">
+                <img src="https://vignette.wikia.nocookie.net/tokyoghoul/images/0/0b/Goat_members_arriving_to_CCG.png/revision/latest?cb=20171206182652">
+                <div class="my images">
+                <img src= "https://vignette.wikia.nocookie.net/tokyoghoul/images/c/cc/Sasaki_claims_the_Title.png/revision/latest?cb=20160803163238">
+                  <div class="my images">
+                <img src= "https://vignette.wikia.nocookie.net/tokyoghoul/images/2/23/Kaneki_the_Black_Reaper.png/revision/latest?cb=20160520211727">
                 </div>
-                </div>
-                </div>
+            </div>
+        </div>
         <!--About Us-->
                <div id="about" class="about">
-               <div class= "slideshow-container">
+               <div class= "container">
                  <h2>About Us</h2>  
                  <p>
-                     Lorem ipsum dolor sit amet,consectetur 
-                         adipiscing elit.
-                <p>
+                Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
                  <hr>
-                 <h3> Our Work</h3> 
+                 <h3>Our Work</h3> 
                  <div class="row">
                      <div class="col-lg-6 col-sm-6">
                          <i class="fas fa-seedling" aria-hidden="true"></i>
@@ -71,6 +92,15 @@
                              <i class="fas fa-seedling" aria-hidden="true"></i>
                              <span><strong>Oceans</strong></span>
                              <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+                         </div>
+                    </div>
+                        <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                        <i class="fas fa-seedling" aria-hidden="true"></i>
+                              <span><strong>Land</strong></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
+                    </div>
+                    </div> 
                              <!--Contact-->
                              <div id= "contact" class="contact">
                              <div class="container">
@@ -86,13 +116,13 @@
          </div>
                  <div class="row">
                 <div class="col-lg-6 col-md-6">
-                <div class=input-group input-group-lg">
+                <div class="input-group input-group-lg">
                 <div class=input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">
-                    <i class="fas fa-user" aria-hidden="true"</i></span>
+                    <i class="fas fa-user" aria-hidden="true"></i></span>
                     </div>
                     <input type="text" class="form control" aria describedly="sizing-adon1"
-                    placeholder="Full Name"Aislinn Feldberg/>
+                    placeholder="Sui Ishida"/>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     
@@ -103,10 +133,10 @@
                 <div class="input-group input-group-lg">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">
-                    <i class="fas fa-user" aria-hidden="true"</i></span>
+                    <i class="fas fa-user" aria-hidden="true"></i></span>
                     </div>
                     <input type="text" class="form control" aria describedly="sizing-adon1"
-                    placeholder="Full Name"Aislinn Feldberg/>
+                    placeholder="Full Name"/>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     
@@ -117,10 +147,10 @@
                 <div class="input-group input-group-lg">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">
-                    <i class="fas fa-user" aria-hidden="true"</i></span>
+                    <i class="fas fa-user" aria-hidden="true"></i></span>
                     </div>
                     <input type="text" class="form control" aria describedly="sizing-adon1"
-                    placeholder="Full Name"Aislinn Feldberg/>
+                    placeholder="Full Name"/>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     
@@ -131,10 +161,10 @@
                 <div class="input-group input-group-lg">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">
-                    <i class="fas fa-user" aria-hidden="true"</i></span>
+                    <i class="fas fa-user" aria-hidden="true"></i></span>
                     </div>
                     <input type="text" class="form control" aria describedly="sizing-adon1"
-                    placeholder="Full Name"Aislinn Feldberg/>
+                    placeholder="Full Name"/>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     
@@ -145,10 +175,10 @@
                 <div class="input-group input-group-lg">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">
-                    <i class="fas fa-user" aria-hidden="true"</i></span>
+                    <i class="fas fa-user" aria-hidden="true"></i></span>
                     </div>
                     <input type="text" class="form control" aria describedly="sizing-adon1"
-                    placeholder="Full Name"Aislinn Feldberg/>
+                    placeholder="Full Name"/>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     
@@ -156,13 +186,13 @@
          </div> 
           <div class="row">
                 <div class="col-lg-6 col-md-6">
-                <div class=input-group input-group-lg">
-                <div class=input-group-prepend">
+                <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">
-                    <i class="fas fa-envelope" aria-hidden="true"</i></span>
+                    <i class="fas fa-envelope" aria-hidden="true"></i></span>
                     </div>
                     <input type="text" class="form control" aria describedly="sizing-adon1"
-                    placeholder="Email"acefeldberg@gmail.com/>
+                    placeholder="Email"/>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     
@@ -173,10 +203,10 @@
                 <div class="input-group input-group-lg">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">
-                    <i class="fas fa-phone" aria-hidden="true"</i></span>
+                    <i class="fas fa-phone" aria-hidden="true"></i></span>
                     </div>
                     <input type="text" class="form control" aria describedly="sizing-adon1"
-                    placeholder="Phone Number"917-246-5567/>
+                    placeholder="Phone Number"/>
                 </div>
                 <div class="col-lg-6 col-md-6">
                 
@@ -186,7 +216,7 @@
     </div> 
          <div class="col-lg-6 col-md-6">
              <div class="input-group input-group-lg">    
-               <text area cols="80" rows=6 class="form-control message"></text area>
+               <text area cols="80" rows=6 class="form-control message"></text><area>
                </div>
                <button class="btn btn-primary btn-block" type="button">Submit</button>
         </div>
@@ -229,7 +259,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-6">
              <input type="button" class="btn btn-outline-primary btn-lg" 
-              placeholder="$" aria-label-"" aria-describedly="basic-addon1">
+              placeholder="$" aria-describedly="basic-addon1">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button">Donate</button>
                 </div>
@@ -270,3 +300,7 @@
         </div>
     </div>    
 </div>
+ <!-- Javascript -->
+        <script type="text/javascript" src="javascript.js"></script>
+</body>                
+</html>
